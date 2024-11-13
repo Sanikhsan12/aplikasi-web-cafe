@@ -1,0 +1,211 @@
+:root {
+  --brown-color: rgba(83, 47, 1, 0.8);
+  --white-color: #f8f9fa;
+  --black-color: #000000;
+  --boldbrown-color: #351f01;
+  --red-color: #ff0000;
+  --blue-color: #020267;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+body {
+  background-image: url("../src/bg_admin.jpg");
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+section {
+  margin-top: 4rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+h2 {
+  margin-bottom: 4rem;
+}
+
+.custom-link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+/* navbar */
+.navbar {
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.navbar-brand {
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.btn {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  border-radius: 5px;
+}
+
+#btn-refresh {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+#btn-refresh:hover {
+  background-color: var(--blue-color);
+}
+
+#btn-logout {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  margin-right: 1rem;
+}
+
+#btn-logout:hover {
+  background-color: var(--red-color);
+}
+
+/* tabel - transaksi */
+.tabel-transaksi {
+  background-color: var(--boldbrown-color);
+  color: var(--white-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: -15px;
+  text-align: center;
+  margin: 100px auto 50px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.tbl-tansaksi {
+  border: 2px solid var(--white-color);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tbl-item {
+  padding: 2rem;
+  border: 1px solid var(--white-color);
+}
+
+.tabel-admin {
+  background-color: var(--boldbrown-color);
+  color: var(--white-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.tbl-tansaksi {
+  border: 2px solid var(--white-color);
+}
+
+.tbl-item {
+  padding: 2rem;
+}
+
+.tbl-admin {
+  border: 2px solid var(--white-color);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/* resposnsive */
+/* gak dipake dulu soalnya muncul scroll bar di tabel transaksi karna kepanjangan */
+.tabel-transaksi,
+.tabel-admin {
+  background-color: var(--boldbrown-color);
+  color: var(--white-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  overflow-x: auto;
+}
+
+.tbl-transaksi,
+.tbl-admin {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.tbl-item {
+  padding: clamp(0.5rem, 1vw, 1.5rem);
+  border: 1px solid var(--white-color);
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .tabel-transaksi,
+  .tabel-admin {
+    width: 95%;
+  }
+
+  .tbl-item {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabel-transaksi,
+  .tabel-admin {
+    width: 98%;
+    padding: 1rem;
+  }
+
+  .tbl-item {
+    padding: 0.5rem;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .tabel-transaksi,
+  .tabel-admin {
+    padding: 0.8rem;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .tbl-item {
+    padding: 0.4rem;
+  }
+}

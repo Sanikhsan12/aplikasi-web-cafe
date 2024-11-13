@@ -1,0 +1,94 @@
+/* all */
+:root {
+  --brown-color: rgba(83, 47, 1, 0.8); /* transparansi 80% */
+  --white-color: #f8f9fa;
+  --black-color: #000000;
+  --boldbrown-color: #351f01;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-image: url("../src/bg_login.jpeg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+/* navbar */
+.navbar-brand {
+  color: var(--black-color);
+  font-weight: bold;
+}
+
+.senja-txt {
+  color: var(--white-color);
+}
+
+.nav-items {
+  margin-left: 1.5rem;
+  font-size: large;
+}
+
+.nav-items a:hover {
+  color: var(--black-color);
+}
+
+/* form login */
+.card {
+  background-color: var(--boldbrown-color);
+  color: var(--white-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.form-label {
+  padding-bottom: 10px;
+}
+
+.form-login {
+  background-color: transparent;
+  color: var(--white-color);
+  margin: -15px;
+}
+
+.form-login .btn {
+  color: var(--white-color);
+  background-color: var(--brown-color);
+  border-color: var(--brown-color);
+}
+.form-login .container {
+  background-color: transparent;
+}
+
+.link-register:hover {
+  color: var(--black-color);
+  background-color: var(--white-color);
+  border-radius: 5px;
+}
+
+/* media query untuk responsive */
+/* hp */
+@media (max-width: 500px) {
+  .card {
+    padding: 1rem;
+    width: 300px;
+    height: 500px;
+  }
+  .form-login {
+    margin: -15px;
+  }
+  .card p {
+    padding-bottom: 20px;
+  }
+}
